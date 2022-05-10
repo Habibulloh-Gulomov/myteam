@@ -481,8 +481,7 @@ img {
 .header__burger {
   border: none;
   background: none;
-  width: 20px;
-  height: 17px;
+  font-size: 24px;
   color: #fff;
   display: none;
 }
@@ -514,9 +513,9 @@ img {
   }
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 375px) {
   .header__burger {
-    margin-left: 150px;
+    margin-left: 130px;
   }
 }
 
@@ -639,7 +638,7 @@ img {
     padding: 0;
     margin: 0;
     width: 327px;
-    margin-left: 15px;
+    margin: 0 auto;
   }
   .title {
     font-size: 40px;
@@ -660,6 +659,18 @@ img {
     padding: 0;
     margin: 0;
     width: 327px;
+  }
+  .hero::after {
+    display: block;
+    width: 358px;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 250px);
+    background-image: url("../../img/herobg.png");
+    background-repeat: no-repeat;
+    background-size: 358px 100px;
+    content: "";
   }
 }
 /*# sourceMappingURL=main.css.map */

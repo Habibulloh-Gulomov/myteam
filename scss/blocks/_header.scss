@@ -65,8 +65,9 @@
 .header__burger{
   border: none;
   background: none;
-  width: 20px;
-  height: 17px;
+  // width: 20px;
+  // height: 17px;
+  font-size: 24px;
   color: #fff;
   display: none;
 }
@@ -98,9 +99,9 @@
 }
 
 
-@media only screen and(max-width:576px){
+@media only screen and(max-width:375px){
 
   .header__burger{
-    margin-left: 150px;
+    margin-left: 130px;
   }
 }
