@@ -3,39 +3,19 @@
   background-color: #014E56;
   padding-top: 120px;
   padding-bottom: 250px;
-  &::before{
-    display: block;
-    width: 200px;
-    height: 200px;
-    position: absolute;
-    left: calc(50% - 859px);
-    background-image: url("../../img/herobg1.png");
-    background-repeat: no-repeat;
-    background-size: 200px 200px;
-    content: "";
-  }
-
-  &::after{
-    display: block;
-    width: 358px;
-    height: 100px;
-    position: absolute;
-    bottom: 0;
-    left: calc(50% + 180px);
-    background-image: url("../../img/herobg.png");
-    background-repeat: no-repeat;
-    background-size: 358px 100px;
-    content: "";
-  }
+  background-image: url("../../img/herobg1.png"),url("../../img/herobg.png");
+  background-repeat: no-repeat;
+  background-size: 200px 200px,358px 100px;
+  background-position:left calc(50% - 758px) top 125px,calc(50% + 380px) bottom;
 }
 
 .hero__inner{
   display: flex;
+  justify-content: space-between;
 }
 
 .title{
   margin: 0;
-  margin-right: auto;
   font-weight: 700;
   font-size: 100px;
   line-height: 100px;
@@ -75,6 +55,10 @@
 @media only screen and(max-width:768px){
   .hero{
     padding-top: 122px;
+    background-image: url(../../img/herobg.png);
+    background-repeat: no-repeat;
+    background-position:calc(50%) bottom ;
+    background-size: 358px 100px;
   }
   .hero::after{
     bottom: 0;
@@ -82,22 +66,26 @@
   }
   .hero__inner{
     flex-direction: column;
-    justify-content: center;
-    margin-left: 116px;
+    align-items: center;
   }
   .hero__span{
     display: none;
   }
   .title{
+    width: 100%;
     margin-bottom: 24px;
     text-align: center;
     font-size: 64px;
     line-height: 56px;
-    margin-left: 60px;
     &__piece{
       font-size: 64px;
       line-height: 56px;
     }
+  }
+
+  .hero__content{
+    width: 100%;
+    max-width:457px ;
   }
 
   .hero__text{
@@ -108,11 +96,12 @@
 }
 
 @media only screen and(max-width:576px){
+
   .hero__inner{
     padding: 0;
-    margin: 0;
-    width: 327px;
-    margin-left: 15px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 327px;
   }
 
   .title{
@@ -127,25 +116,13 @@
     font-size: 15px;
     line-height: 28px;
   }
-  .hero::after{
-    display: block;
-    width: 358px;
-    height: 100px;
-    position: absolute;
-    bottom: 0;
-    left: calc(50% - 250px);
-    background-image: url("../../img/herobg.png");
-    background-repeat: no-repeat;
-    background-size: 358px 100px;
-    content: "";
-  }
 }
 
 
 @media only screen and(max-width:375px){
   .hero__inner{
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
     width: 327px;
   }
   .hero::after{
