@@ -11,12 +11,14 @@
   display: flex;
 }
 
-.left{
+.inner__left{
   width: 445px;
+  display: flex;
+  flex-direction: column;
 }
 
 .left__line{
-  display: inline-block;
+  display: block;
   width: 50px;
   height: 4px;
   margin-bottom: 54px;
@@ -111,13 +113,13 @@
 
   .inner{
     flex-direction: column;
-    padding-left: 68px;
+    padding-left: 0px;
   }
 
   .inner__left{
     width: 100%;
     max-width: 240px;
-    margin-left: 60px;
+    margin-left:15%;
   }
 
   .right__item{
@@ -133,6 +135,10 @@
   }
 
   .right{
+    margin: 0;
+  }
+
+  .right__img{
     margin: 0;
   }
 
