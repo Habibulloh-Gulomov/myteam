@@ -1,0 +1,39 @@
+.about{
+  background-color: #014E56;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.about__inner{
+  display: flex;
+  justify-content: space-between;
+}
+
+.title{
+  margin: 0;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 100px;
+  color: #FFFFFF;
+}
+
+.about__content{
+  width: 100%;
+  max-width: 730px;
+}
+
+.about__span{
+  display:inline-block;
+  margin-bottom: 55px;
+  width: 55px;
+  height: 4px;
+  background: #F67E7E;
+}
+
+.about__text{
+  margin: 0;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #FFFFFF;
+}

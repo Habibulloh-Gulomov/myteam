@@ -112,14 +112,17 @@
   }
 
   .inner{
+    width: 100%;
+    max-width: 375px;
     flex-direction: column;
+    margin: 0 auto;
     padding-left: 0px;
   }
 
   .inner__left{
     width: 100%;
     max-width: 240px;
-    margin-left:15%;
+    // margin-left:15%;
   }
 
   .right__item{
@@ -147,13 +150,5 @@
     margin-bottom: 56px;
     font-size: 32px;
     line-height: 32px;
-  }
-}
-
-@media only screen and(max-width:320px){
-  .inner__left{
-    width: 100%;
-    max-width: 240px;
-    margin-left: 0;
   }
 }
