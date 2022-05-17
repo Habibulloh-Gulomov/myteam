@@ -2,6 +2,10 @@
   background-color: #014E56;
   padding-top: 120px;
   padding-bottom: 120px;
+  background-image: url(../../img/aboutherobg.png);
+  background-repeat: no-repeat;
+  background-size: 200px 200px;
+  background-position: left calc( 50% + 750px) bottom;
 }
 
 .about__inner{
@@ -36,4 +40,42 @@
   font-size: 18px;
   line-height: 28px;
   color: #FFFFFF;
+}
+
+@media only screen and (max-width: 768px){
+  .about{
+    background-position: calc(50% + 387px) bottom;
+  }
+
+  .about__inner{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about__content{
+    max-width: 457px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .about__span{
+    display: none;
+  }
+
+  .about__title{
+    margin: 0 0 64px;
+    font-size: 64px;
+    line-height: 56px;
+  }
+
+  .about__text{
+    font-size: 15px;
+    line-height: 28px;
+  }
+}
+
+@media only screen and (max-width:576px){
+  .about{
+    background-position:calc(50% + 295px) bottom ;
+  }
 }
